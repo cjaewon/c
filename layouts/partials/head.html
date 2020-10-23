@@ -9,3 +9,13 @@
 <link rel="shortcut icon" href="/app/icons/favicon-72x72.png">
 <meta name="theme-color" content="#454e56">
 
+<!-- Styles -->
+{{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed") }}
+{{ $sass := resources.Get "design/styles.scss" }}
+{{ $styles := $sass | resources.ToCSS $options }}
+
+{{ if  hugo.IsProduction  }}
+  {{ $styles = $styles | minify | fingerprint }}
+{{ end }}
+
+<link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
