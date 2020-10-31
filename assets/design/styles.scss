@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap');
+
+@import './page/main.scss';
+@import './page/articles.scss';
+@import './components/article.scss';
 @import './components/header.scss';
 @import './components/hero.scss';
 
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", 나눔고딕, "Nanum Gothic", "Noto Sans KR", "Noto Sans CJK KR", arial, 돋움, Dotum, Tahoma, Geneva, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }

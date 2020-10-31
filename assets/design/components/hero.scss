@@ -2,7 +2,9 @@
   margin-top: 5.625rem;
   margin-right: auto;
   margin-left: auto;
-  width: 768px;
+  max-width: 768px;
+  padding-bottom: 0.925rem;
+  border-bottom: 1px solid #E2E8F0;
 }
 
 .hero__profile {
@@ -35,7 +37,7 @@
 
 .hero__profile--link {
   margin-top: 0.325rem;
-
+  
   a {
     color: #3182CE;
     cursor: pointer;

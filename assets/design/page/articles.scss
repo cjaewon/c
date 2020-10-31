@@ -1,0 +1,89 @@
+.article-page {
+  width: 768px;
+  margin: 5.5rem auto;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.article-page__header {
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.332rem;
+    margin: 0;
+  }
+
+}
+
+.article-page__header--footer {
+  color: #4A5568;
+  font-size: 1.125rem;
+  margin: 0.75rem 0;
+
+  .article-page__header--username {
+    color: black;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.article-page__content {
+  font-size: 1.125rem;
+  color: rgb(34, 36, 38);
+  line-height: 1.7;
+  letter-spacing: -0.004em;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+
+  h1 {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h2, h3, h4 {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  .highlight {
+    pre {
+      overflow: auto;
+      line-height: 1.6;
+      margin-top: 2em;
+      margin-bottom: 2em;
+      border-radius: .5rem;
+      padding-top: 1.3rem;
+      padding-right: 1.3333333em;
+      padding-bottom: 1.3rem;
+      padding-left: 1.3rem;
+    }
+
+    code {
+      font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+      font-weight: 500;
+    }
+  }
+
+  hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    background: rgb(222, 222, 222);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}

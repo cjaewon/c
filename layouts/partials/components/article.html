@@ -1,0 +1,16 @@
+<article class="article">
+  <a href="{{ .Permalink }}">
+    <h1 class="article__title">{{ .Title }}</h1>
+  </a>
+  <div class="article__row">
+    <a href="{{ .Permalink }}">
+      <img src="{{ if .Params.Thumbnail }}{{ .Params.Thumbnail }}{{ else }}/app/null-thumbnail.svg{{ end }}" class="article__row--thumbnail" />
+    </a>
+      <div class="article__row--description">
+      <div class="article__column">
+        <p class="article__column--description">{{ plainify .Content | truncate 120 }}</p>
+        <p class="article__column--footer">{{ dateFormat "January 1, 2006" .Date }}</p>
+      </div>
+    </div>
+  </div>
+</article>

@@ -1,0 +1,17 @@
+{{ define "main" }}
+  <article class="article-page">
+    <header class="article-page__header">
+      <h1>{{ .Title }}</h1>
+      <p class="article-page__header--footer">
+        <a href="/">
+          <span class="article-page__header--username">Cjaewon</span>
+        </a>
+        <span> • </span>
+        <span class="article-page__header--date">{{ dateFormat "January 1, 2006" .Date }}</span>
+      </p>
+    </header>
+    <main class="article-page__content">
+      {{ .Content }}
+    </main>
+  </article>
+{{ end }}
