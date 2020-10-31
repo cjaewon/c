@@ -1,5 +1,5 @@
 .article-page {
-  width: 768px;
+  max-width: 768px;
   margin: 5.5rem auto;
 
   a {
@@ -85,5 +85,18 @@
     background: rgb(222, 222, 222);
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+
+  img {
+    display: block;
+    margin: 3rem auto;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .article-page__content, .article-page__header {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }

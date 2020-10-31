@@ -1,6 +1,7 @@
 .article {
   color: #2D3748;
-  margin: 3.5rem 0;
+  margin: 3.5rem 0rem;
+  
 
   h1 {
     font-size: 1.75rem;
@@ -12,7 +13,6 @@
       text-decoration: underline;
     }
   }
-
 
   a {
     text-decoration: none;
@@ -28,11 +28,11 @@
   width: 12rem;
   height: 6.25rem;
   object-fit: cover;
+  margin-right: 0.925rem;
 }
 
-.article__row--description {
-  padding: 0 1rem;
-}
+// .article__row--description {
+// }
 
 .article__column {
   display: flex;
@@ -59,4 +59,18 @@
   font-size: 1.0925rem;
   margin: 0;
   // margin: 0.75rem 0;
+}
+
+@media (max-width: 768px) {
+  .article {
+    margin: 3.5rem 0.925rem;
+
+    h1 {
+      margin-bottom: 0.125rem;
+    }
+  }
+
+  .article__row--thumbnail {
+    display: none;
+  }
 }

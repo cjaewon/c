@@ -1,6 +1,5 @@
 {{ define "main" }}
   {{ partial "components/hero" . }}
-
   <div class="articles">
     {{ range where .Site.RegularPages "Section" "articles" }}
       {{ partial "components/article" . }}

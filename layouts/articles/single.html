@@ -11,6 +11,9 @@
       </p>
     </header>
     <main class="article-page__content">
+      {{ with .Params.Thumbnail }}
+        <img src="{{ . }}" alt="{{ $.Title }} 섬네일" />
+      {{ end }}
       {{ .Content }}
     </main>
   </article>

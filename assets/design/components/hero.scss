@@ -3,7 +3,7 @@
   margin-right: auto;
   margin-left: auto;
   max-width: 768px;
-  padding-bottom: 0.925rem;
+  padding: 0.925rem;
   border-bottom: 1px solid #E2E8F0;
 }
 
@@ -46,5 +46,12 @@
     &:hover {
       text-decoration: underline;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__profile img {
+    width: 6.5rem;
+    height: 6.5rem;
   }
 }
