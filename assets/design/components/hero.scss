@@ -1,0 +1,48 @@
+.hero {
+  margin-top: 5.625rem;
+  margin-right: auto;
+  margin-left: auto;
+  width: 768px;
+}
+
+.hero__profile {
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 4px 0px;
+    margin-right: 1.25rem;
+  }
+}
+
+.hero__profile--info {
+  display: flex;
+  flex-direction: column;
+
+  h1, p {
+    margin: 0;
+  }
+
+  p {
+    color: #718096;
+    font-size: 1.0925rem;
+  }
+}
+
+.hero__profile--link {
+  margin-top: 0.325rem;
+
+  a {
+    color: #3182CE;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
