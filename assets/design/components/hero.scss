@@ -4,12 +4,14 @@
   margin-left: auto;
   max-width: 768px;
   padding: 0.925rem;
-  border-bottom: 1px solid #E2E8F0;
+  padding-bottom: 0;
 }
 
 .hero__profile {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #E2E8F0;
+  padding-bottom: 0.925rem;
 
   img {
     width: 8rem;
@@ -49,9 +51,46 @@
   }
 }
 
+.hero__navigator {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  display: flex;
+  justify-content: center;
+
+  a {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: 1.325rem;
+    width: 8rem;
+    height: 3rem;
+    color: #495057;
+    text-decoration: none;
+    transition: color 0.25s ease-in-out 0s;
+    font-weight: 600;
+  }
+
+  a[rel=active] {
+    color: #4299E1;
+    border-bottom: 2px solid #4299E1;
+  }
+}
+
 @media (max-width: 768px) {
   .hero__profile img {
     width: 6.5rem;
     height: 6.5rem;
+  }
+
+  .hero__profile--info {
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 0.925rem;
+    }
   }
 }

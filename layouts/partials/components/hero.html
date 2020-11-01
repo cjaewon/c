@@ -9,4 +9,9 @@
       </div>
     </div>
   </div>
+  <div class="hero__navigator">
+    <a href="/" rel='{{ if .IsHome }}active{{ end }}'>글</a>
+    <a href="/series" rel='{{ if in (.Permalink | relURL) "series" }}active{{ end }}'>시리즈</a>
+    <a href="/about" rel='{{ if in (.Permalink | relURL) "about" }}active{{ end }}'>소개</a>
+  </div>
 </div>
