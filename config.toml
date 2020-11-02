@@ -1,3 +1,7 @@
 baseURL = "http://example.org/"
 languageCode = "ko-kr"
 title = "ㅊ.JAEWON"
+
+[taxonomies]
+  series = "series"
+  tag = "tags"

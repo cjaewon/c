@@ -1,8 +1,31 @@
 {{ define "main" }}
   {{ partial "components/hero" . }}
-  <div class="articles">
-    {{ range where .Site.RegularPages "Section" "articles" }}
-      {{ partial "components/article" . }}
-    {{ end }}
+  <div class="series">
+    <div class="series__card">
+      <a href="/series/hugo" alt="title">
+        <img src="https://media.vlpt.us/images/cyheum/post/8f949b0a-752d-40b6-91ba-50f72cd3bd52/스크린샷 2020-09-27 21.25.34.png?w=768" />
+      </a>
+      <a href="/series/hugo">
+        <h4>Hugo로 정적 사이트 만들기</h4>
+      </a>
+      <div class="series__card--footer">
+        <span class="count">2개의 포스트</span>
+        <span class="dot">·</span>
+        <span class="date">마지막 업데이트 2020년 10월 5일</span>
+      </div>
+    </div>
+    <div class="series__card">
+      <a href="/series/hugo" alt="title">
+        <img src="https://media.vlpt.us/images/cyheum/post/c94794d4-9c12-4808-a5d2-8f3f7d3c23aa/%EC%9C%84%EC%BD%94%EB%93%9C.png?w=768" />
+      </a>
+      <a href="/series/hugo">
+        <h4>Hugo로 정적 사이트 만들기</h4>
+      </a>
+      <div class="series__card--footer">
+        <span class="count">2개의 포스트</span>
+        <span class="dot">·</span>
+        <span class="date">마지막 업데이트 2020년 10월 5일</span>
+      </div>
+    </div>
   </div>
 {{ end }}

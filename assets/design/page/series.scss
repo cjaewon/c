@@ -1,0 +1,53 @@
+.series {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.series__card {
+  padding: 1rem;
+
+  img {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 198px;
+    display: block;
+    object-fit: cover;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  h4 {
+    margin-top: 0.925rem;
+    margin-bottom: 0.25rem;
+    font-size: 1.25rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.series__card--footer {
+  font-size: 0.875rem;
+  color: rgb(134, 142, 150);
+
+  .dot {
+    margin-right: 0.25rem;
+    margin-left: 0.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .series {
+    grid-template-columns: 1fr;
+  }
+}

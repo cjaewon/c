@@ -2,7 +2,7 @@
 title: "블로그를 시작합니다!"
 date: 2020-10-31T19:29:53+09:00
 thumbnail: /content/articles/thumbnail/hello-world.svg
-tags: [blog]
+series: blog
 draft: true
 ---
 
