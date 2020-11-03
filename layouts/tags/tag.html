@@ -1,8 +1,8 @@
 {{ define "main" }}
   <header class="tag__header">
-    <h1>#{{ title .Title }}</h1>
+    <h1># {{ title .Title }}</h1>
     <div class="tag__header--footer">
-      <span class="count">총 2개의 포스트</span>
+      <span class="count">총 {{ len .Pages }}개의 포스트</span>
     </div>
   </header>
   <div class="articles">
