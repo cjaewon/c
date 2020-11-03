@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap');
 
-@import './page/main.scss';
 @import './page/articles.scss';
 @import './page/series.scss';
+@import './page/tag.scss';
 @import './components/article.scss';
 @import './components/header.scss';
 @import './components/hero.scss';
+@import './common/tag.scss';
+@import './common/articles.scss';
 
 body {
   margin: 0;

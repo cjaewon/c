@@ -1,0 +1,20 @@
+.tag__header {
+  margin-top: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 768px;
+  padding: 0.925rem;
+  padding-bottom: 0;
+
+  h1 {
+    font-size: 3rem;
+    line-height: 1.5;
+    color: rgb(52, 58, 64);
+    margin-bottom: 0.25rem;
+  }
+}
+
+.tag__header--footer {
+  color: #718096;
+  font-size: 0.875rem;
+}

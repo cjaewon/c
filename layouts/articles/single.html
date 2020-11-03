@@ -9,6 +9,11 @@
         <span> • </span>
         <span class="article-page__header--date">{{ dateFormat "January 1, 2006" .Date }}</span>
       </p>
+      <div class="article-page__header--tags">
+        {{ range .Params.Tags }} 
+          <a href= "/tags/{{ anchorize . }}" class="tag">{{ . }}</a>
+        {{ end }}
+      </div>
     </header>
     <main class="article-page__content">
       {{ with .Params.Thumbnail }}
