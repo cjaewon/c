@@ -1,4 +1,4 @@
-<title>{{ .Title }}</title>
+<title>{{ if .IsHome }} {{ .Title }} {{ else }} {{ .Title }} | {{ .Site.Title }} {{ end }}</title>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="HandheldFriendly" content="True">
@@ -13,9 +13,12 @@
 {{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed") }}
 {{ $sass := resources.Get "design/styles.scss" }}
 {{ $styles := $sass | resources.ToCSS $options }}
+{{ $scripts := resources.Get "scripts/index.ts" | js.Build "main.js"  }}
 
 {{ if  hugo.IsProduction  }}
   {{ $styles = $styles | minify | fingerprint }}
+  {{ $scripts = $scripts | minify }}
 {{ end }}
 
 <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
+<script type="text/javascript" src="{{ $scripts.RelPermalink }}" defer></script>

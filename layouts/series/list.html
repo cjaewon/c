@@ -1,5 +1,8 @@
 {{ define "main" }}
   {{ partial "components/hero" . }}
+  <!-- {{ range $name, $taxonomy := .Site.Taxonomies.series }}
+    {{ $name }} {{ $taxonomy }}
+  {{ end }} -->
   <div class="series">
     <div class="series__card">
       <a href="/series/hugo" alt="title">
