@@ -1,0 +1,41 @@
+name: github pages
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.78.0'
+          extended: true
+            
+      - name: Setup Nodejs
+        uses: actions/setup-node@v1
+        with:
+           node-version: '14'
+           
+      - name: Build
+        run: |
+          npm install --prefix ./assets/scripts
+          hugo --gc --minify
+          echo "c.cjaewon.com" > ./public/CNAME
+          touch ./public/.nojekyll
+          
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with: 
+          GIT_CONFIG_NAME: github-actions[bot]
+          GIT_CONFIG_EMAIL: github-actions[bot]@users.noreply.github.com
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: public # The folder the action should deploy.
+          CLEAN: true # Automatically remove deleted files from the deploy branch
