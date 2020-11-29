@@ -68,4 +68,13 @@
     padding: 0.25rem 1rem 0.25rem 2rem;
     color: rgb(33, 37, 41);
   }
+
+  a {
+    color: #3182CE;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
