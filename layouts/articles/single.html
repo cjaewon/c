@@ -20,6 +20,7 @@
         <img src="{{ . }}" alt="{{ $.Title }} 섬네일" />
       {{ end }}
       {{ .Content }}
+      {{ partial "components/utteranc.html" . }}
     </main>
   </article>
 {{ end }}

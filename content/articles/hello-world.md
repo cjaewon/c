@@ -4,7 +4,7 @@ date: 2020-10-31T19:29:53+09:00
 thumbnail: /content/articles/thumbnail/hello-world.svg
 description: Jbee, Velopert 님 같은 개발자 분들이 블로그에 글을 쓰시는 것을 보고는 나 또한 🔥 블로그를 시작하고 싶다! 라는 생각이 들었다. 글을 쓰기 앞서, 블로그 플랫폼을 선택해야 했었다.
 tags: [블로그]
-draft: true
+draft: false
 ---
 
 > **한줄 요약** 블로그를 시작합니다. 많은 관심 부탁드립니다. 🙇
