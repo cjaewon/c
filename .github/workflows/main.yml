@@ -18,9 +18,17 @@ jobs:
         with:
           hugo-version: '0.78.0'
           # extended: true
-
+            
+      - name: Setup Nodejs
+        uses: actions/setup-node@v1
+        with:
+           node-version: '14'
+           
       - name: Build
-        run: | 
+        run: |
+          cd ./assets/scripts
+          npm install
+          cd ...
           hugo --gc --minify
           echo "c.cjaewon.com" > ./public/CNAME
           touch ./public/.nojekyll
