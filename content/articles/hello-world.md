@@ -37,7 +37,7 @@ React 와 Graphql 를 사용하는 정적 사이트 생성기로 리액트와 �
 
 그렇게 2개 다 사용해본 결과 **Hugo** 를 선택하게 되었다. 그 이유는 **Gatsby** 를 사용할 시 많은 plugin 과 sharp 리사이징 오류 등 있다는 점이 부담스러웠다.
 
-## Hugo and Singe page app?
+## SPA 흉내내기
 솔직히 Gatsby (React) 를 쓸 때 사용할 수 있는 페이지 이동이 부러웠다. 혹시 일반적인 사이트에서도 이렇게 페이지를 이동할 수 있는 방법을 찾아봤고 [turbolinks](https://github.com/turbolinks/turbolinks) 라는 라이브러리를 발견하게 되었다.
 
 적용한 결과, 더 나은 유저 인터페이스를 제공할 수 있게 되었다!

@@ -82,10 +82,11 @@
   .hero {
     margin-top: 3.75rem;
   }
+  
 
   .hero__profile img {
-    width: 6.5rem;
-    height: 6.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
   }
 
   .hero__profile--info {
@@ -96,5 +97,9 @@
     p {
       font-size: 0.925rem;
     }
+  }
+
+  .hero__navigator {
+    margin-top: 0.925rem;
   }
 }
