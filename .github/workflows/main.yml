@@ -22,7 +22,7 @@ jobs:
       - name: Build
         run: | 
           hugo --gc --minify
-          echo "archive.cjaewon.com" > ./public/CNAME
+          echo "c.cjaewon.com" > ./public/CNAME
           touch ./public/.nojekyll
           
       - name: Deploy to GitHub Pages
