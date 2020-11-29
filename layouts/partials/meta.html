@@ -1,0 +1,17 @@
+<link rel="canonical" href="{{ .Permalink | absURL }}" />
+<meta name="description" content="{{.Description}}">
+
+<meta property="og:title" content="{{ .Title }}" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="{{ .Permalink | absURL }}" />
+
+{{ if .Description }}
+  <meta name="description" content="{{ .Description  }}">
+  <meta property="og:description" content="{{ .Description  }}" />
+{{ end }}
+
+{{ if .Params.Thumbnail }}
+  <meta property="og:image" content="{{ .Params.Thumbnail | absURL }}"/>
+{{ else }}
+  <meta property="og:image" content="/favicon-192x192.png"/>
+{{ end }}

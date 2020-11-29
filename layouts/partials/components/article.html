@@ -8,7 +8,11 @@
     </a>
       <div class="article__row--description">
       <div class="article__column">
-        <p class="article__column--description">{{ plainify .Content | truncate 120 }}</p>
+        {{ if .Description }}
+          <p class="article__column--description">{{ .Description | truncate 120 }}</p>
+        {{ else}}
+          <p class="article__column--description">{{ plainify .Content | truncate 120 }}</p>
+        {{ end }}
         <p class="article__column--footer">{{ dateFormat "January 1, 2006" .Date }}</p>
       </div>
     </div>
