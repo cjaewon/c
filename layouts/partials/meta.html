@@ -8,6 +8,10 @@
 {{ if .Description }}
   <meta name="description" content="{{ .Description  }}">
   <meta property="og:description" content="{{ .Description  }}" />
+{{ else }}
+
+  <meta name="description" content="🙏 매일매일 끄적이는 개발 블로그 입니다!">
+  <meta property="og:description" content="🙏 매일매일 끄적이는 개발 블로그 입니다!" />
 {{ end }}
 
 {{ if .Params.Thumbnail }}
