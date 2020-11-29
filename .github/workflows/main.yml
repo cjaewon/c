@@ -27,7 +27,6 @@ jobs:
       - name: Build
         run: |
           npm install --prefix ./assets/scripts
-          cd ...
           hugo --gc --minify
           echo "c.cjaewon.com" > ./public/CNAME
           touch ./public/.nojekyll
