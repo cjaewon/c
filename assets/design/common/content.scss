@@ -1,7 +1,7 @@
 .content {
   font-size: 1.125rem;
   color: rgb(34, 36, 38);
-  line-height: 1.7;
+  line-height: 1.6;
   letter-spacing: -0.004em;
   word-break: keep-all;
   overflow-wrap: break-word;
@@ -38,9 +38,8 @@
       padding-left: 1.3rem;
     }
 
-    code {
-      font-family: Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
-      font-weight: 500;
+    code[class*=language-], pre[class*=language-] {
+      font-family: 'Fira Code', monospace;
     }
   }
 
