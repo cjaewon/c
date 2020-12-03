@@ -3,7 +3,7 @@
   margin: 2.5rem 0rem;
   
   h1 {
-    font-size: 1.75rem;
+    font-size: 1.625rem;
     margin-bottom: 0.925rem;
     text-decoration: none;
 
@@ -39,15 +39,15 @@
   justify-content: space-between;
   height: 100%;
   box-sizing: border-box;
-  padding: 0.625rem 0;
+  padding: 0.25rem 0;
 }
 
 .article__column--description {
   color: #4A5568;
-  font-size: 1.0925rem;
+  font-size: 0.975rem;
   margin: 0;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   // margin: 0.925rem 0;
@@ -55,7 +55,7 @@
 
 .article__column--footer {
   color: #4A5568;
-  font-size: 1.0925rem;
+  font-size: 0.925rem;
   margin: 0;
   // margin: 0.75rem 0;
 }

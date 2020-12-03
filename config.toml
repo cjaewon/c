@@ -2,6 +2,9 @@ baseURL = "https://c.cjaewon.com"
 languageCode = "ko-kr"
 title = "ㅊ.JAEWON"
 
+pygmentsStyle = "atom"
+pygmentsUseClasses = true
+
 [taxonomies]
   series = "series"
   tag = "tags"

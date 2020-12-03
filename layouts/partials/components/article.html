@@ -9,9 +9,9 @@
       <div class="article__row--description">
       <div class="article__column">
         {{ if .Description }}
-          <p class="article__column--description">{{ .Description | truncate 120 }}</p>
+          <p class="article__column--description">{{ .Description | truncate 200 }}</p>
         {{ else}}
-          <p class="article__column--description">{{ plainify .Content | truncate 120 }}</p>
+          <p class="article__column--description">{{ plainify .Content | truncate 200 }}</p>
         {{ end }}
         <p class="article__column--footer">{{ dateFormat "January 1, 2006" .Date }}</p>
       </div>

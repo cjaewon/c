@@ -25,24 +25,6 @@
     margin-bottom: 1rem;
   }
 
-  .highlight {
-    pre {
-      overflow: auto;
-      line-height: 1.6;
-      margin-top: 2em;
-      margin-bottom: 2em;
-      border-radius: .5rem;
-      padding-top: 1.3rem;
-      padding-right: 1.3333333em;
-      padding-bottom: 1.3rem;
-      padding-left: 1.3rem;
-    }
-
-    code[class*=language-], pre[class*=language-] {
-      font-family: 'Fira Code', monospace;
-    }
-  }
-
   hr {
     border: none;
     height: 1px;
