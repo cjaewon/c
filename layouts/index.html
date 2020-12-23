@@ -1,8 +1,12 @@
 {{ define "main" }}
   {{ partial "components/hero" . }}
   <div class="articles">
-    {{ range where .Site.RegularPages "Section" "articles" }}
+    {{ $paginator := .Paginate (where .Site.RegularPages "Section" "articles") 16 }}
+    
+    {{ range $paginator.Pages }}
       {{ partial "components/article" . }}
     {{ end }}
   </div>
+
+  {{ template "_internal/pagination.html" . }}
 {{ end }}
