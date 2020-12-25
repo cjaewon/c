@@ -16,7 +16,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.78.0'
+          hugo-version: '0.79.1'
           extended: true
             
       - name: Setup Nodejs
@@ -26,7 +26,7 @@ jobs:
            
       - name: Build
         run: |
-          npm install --prefix ./assets/scripts
+          npm install
           hugo --gc --minify
           echo "c.cjaewon.com" > ./public/CNAME
           touch ./public/.nojekyll
