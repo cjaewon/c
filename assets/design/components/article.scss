@@ -1,9 +1,9 @@
 .article {
   color: #2D3748;
-  margin: 2.5rem 0rem;
+  margin: 2.75rem 2.75rem;
   
   h1 {
-    font-size: 1.625rem;
+    font-size: 1.425rem;
     margin-bottom: 0.925rem;
     text-decoration: none;
 
@@ -24,8 +24,8 @@
 }
 
 .article__row--thumbnail {
-  width: 12rem;
-  height: 6.25rem;
+  width: 11.5rem;
+  height: 5.25rem;
   object-fit: cover;
   margin-right: 0.925rem;
 }
@@ -44,7 +44,7 @@
 
 .article__column--description {
   color: #4A5568;
-  font-size: 0.975rem;
+  font-size: 0.875rem;
   line-height: 1.4;
   margin: 0;
   display: -webkit-box;

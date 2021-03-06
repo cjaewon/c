@@ -1,5 +1,5 @@
 .article-page {
-  max-width: 768px;
+  max-width: 672px;
   margin: 5.5rem auto;
 
   a {
@@ -10,8 +10,8 @@
 .article-page__header {
   h1 {
     color: rgb(52, 58, 64);
-    font-size: 2.5rem;
-    font-weight: ㅈ700;
+    font-size: 2.125rem;
+    font-weight: 700;
     line-height: 3.332rem;
     margin: 0;
   }
@@ -20,8 +20,8 @@
 
 .article-page__header--footer {
   color: #4A5568;
-  font-size: 1.125rem;
-  margin: 0.75rem 0;
+  font-size: 1rem;
+  margin: 0.5rem 0;
 
   .article-page__header--username {
     color: black;

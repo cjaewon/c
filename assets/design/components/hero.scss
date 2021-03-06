@@ -2,7 +2,7 @@
   margin-top: 5.625rem;
   margin-right: auto;
   margin-left: auto;
-  max-width: 768px;
+  max-width: 672px;
   padding: 0.925rem;
   padding-bottom: 0;
 }
@@ -14,8 +14,8 @@
   padding-bottom: 0.925rem;
 
   img {
-    width: 8rem;
-    height: 8rem;
+    width: 7rem;
+    height: 7rem;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 4px 0px;
@@ -31,9 +31,13 @@
     margin: 0;
   }
 
+  h1 {
+    font-size: 1.625rem;
+  }
+
   p {
     color: #718096;
-    font-size: 1.0925rem;
+    font-size: 0.975rem;
   }
 }
 
@@ -44,6 +48,7 @@
     color: #3182CE;
     cursor: pointer;
     text-decoration: none;
+    font-size: 0.975rem;
 
     &:hover {
       text-decoration: underline;
@@ -52,8 +57,8 @@
 }
 
 .hero__navigator {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+  margin-top: 1.75rem;
+  margin-bottom: 2.25rem;
   display: flex;
   justify-content: center;
 
@@ -63,7 +68,7 @@
     align-items: center;
     -webkit-box-pack: center;
     justify-content: center;
-    font-size: 1.325rem;
+    font-size: 1.0925rem;
     width: 8rem;
     height: 3rem;
     color: #495057;
