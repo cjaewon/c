@@ -1,6 +1,7 @@
 ---
 title: "Yarn과 함께 모노레포 흟어보기"
 date: 2021-03-06T20:39:51+09:00
+description: 자바스크립트 생태계의 발전으로 프론트, 백엔드 및 다양한 환경들을 지원 할 수 있게 되었다. 이런 상황에서부터 여러 프로젝트에서 중복되는 코드들을 여러번 작성해야하는 문제가 발생했다. 이 문제를 해결하기 위해서 등장한 것이 바로 모노레포 개념이다.
 thumbnail: /content/articles/thumbnail/monorepo-with-yarn.jpg
 tags: [Nodejs]
 
