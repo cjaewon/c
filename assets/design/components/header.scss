@@ -10,3 +10,10 @@
 .header__logo {
   height: 1.35rem;
 }
+
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 0.275rem;
+  }
+}
