@@ -6,15 +6,17 @@
     <a href="{{ .Permalink }}">
       <img src="{{ if .Params.Thumbnail }}{{ .Params.Thumbnail }}{{ else }}/app/null-thumbnail.svg{{ end }}" alt="{{ .Title }} 섬네일" class="article__row--thumbnail"  />
     </a>
+    <a href="{{ .Permalink }}">
       <div class="article__row--description">
-      <div class="article__column">
-        {{ if .Description }}
-          <p class="article__column--description">{{ .Description | truncate 200 }}</p>
-        {{ else}}
-          <p class="article__column--description">{{ plainify .Content | truncate 200 }}</p>
-        {{ end }}
-        <p class="article__column--footer">{{ dateFormat "January 1, 2006" .Date }}</p>
+        <div class="article__column">
+          {{ if .Description }}
+            <p class="article__column--description">{{ .Description | truncate 200 }}</p>
+          {{ else}}
+            <p class="article__column--description">{{ plainify .Content | truncate 200 }}</p>
+          {{ end }}
+          <p class="article__column--footer">{{ dateFormat "January 2, 2006" .Date }}</p>
+        </div>
       </div>
-    </div>
+    </a>
   </div>
 </article>

@@ -1,0 +1,14 @@
+<div class="pagination">
+  {{ if .HasPrev }}
+    <a href="{{ .Prev.URL }}" class="pagination__link">
+    	&#60; 이전
+    </a>
+  {{ else }}
+    <div></div>
+  {{ end }}
+  {{ if .HasNext }}
+    <a href="{{ .Next.URL }}" class="pagination__link">
+      다음 &#62;
+    </a>
+  {{ end }}
+</div>
