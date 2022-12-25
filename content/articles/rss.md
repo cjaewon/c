@@ -1,5 +1,5 @@
 ---
-title: "개인적인 RSS 사용법 메모"
+title: "RSS 사용법 메모"
 date: 2022-12-25T18:59:17+09:00
 thumbnail: /content/articles/thumbnail/rss.jpg
 draft: false
@@ -20,7 +20,7 @@ draft: false
 
 - **Github** \
 Github의 경우에는 밑에 코드와 같은 방식으로 rss 피드 주소들을 불러올 수 있다. `<YOUR-TOKEN>`에는 Personal Access Token을 넣어주면 된다. \
-여기서 `current_user` 항목의 경우에는 유저의 대시보드 피드를 보여주는 rss 주소(https://github.com/user.private.atom?token=) 를 가지고 있는데, 토큰과 함께 제공된다. 근데 이 url의 토큰이 얼마나 지속되는지는 모르겠다. 아마 `<YOUR-TOKEN>`이 제거될 때가 아닌가 싶다.
+여기서 `current_user` 항목의 경우에는 유저의 대시보드 피드를 보여주는 rss 주소(https://github.com/user.private.atom?token=) 를 가지고 있는데, 토큰과 함께 제공된다. 근데 이 토큰이 얼마나 지속되는지는 모르겠다. 아마 Personal Access Token이 제거될 때가 아닌가 싶다.
 
 ```sh
   curl \
