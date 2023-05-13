@@ -23,7 +23,7 @@ Mac과 ios를 타겟으로 하는 오픈소스 RSS 앱이다. 기본적으로는
 - **Github** \
 Github의 경우에는 https://api.github.com/feeds 에 token과 함께 요청하면 RSS 관련 주소들을 확인 할 수 있다. 
 여기서 `current_user` 항목의 경우에는 유저의 대시보드 피드를 보여주는데 특정 토큰과 함께 다음과 같은 주소 [user.private.atom?token=](https://github.com/user.private.atom?token=) 로 제공된다. 
-이 특정 토큰의 경우에 어떻게 재발급 혹은 삭제 하는지는 더 찾아봐야겠다. \
+이 특정 토큰의 경우에 어떻게 재발급 및 삭제 하는지에 대해서는 더 찾아봐야겠다. \
 [stackoverflow.com - 참고](https://stackoverflow.com/questions/74244555/revoke-generate-github-personal-news-rss-feed-token)
 
 - **그 외** \
