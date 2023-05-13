@@ -27,6 +27,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
 <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css" />
 
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 {{ if hugo.IsProduction }}
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-V02SF1CXXT"></script>
@@ -36,5 +37,38 @@
     gtag('js', new Date());
 
     gtag('config', 'G-V02SF1CXXT');
+  </script>
+{{ end }}
+
+<!-- MathJax -->
+
+{{ if and .IsPage (eq (.Param "mathjax") true) }}
+  <script src="{{ .Param "mathjaxPath" | default "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" }}{{ with .Param "mathjaxConfig" | default "TeX-AMS-MML_HTMLorMML" }}?config={{ . }}{{ end }}" async>
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+            extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      }
+    });
+
+    MathJax.Hub.Queue(function() {
+      // Fix <code> tags after MathJax finishes running. This is a
+      // hack to overcome a shortcoming of Markdown. Discussion at
+      // https://github.com/mojombo/jekyll/issues/199
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i = 0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+      
+    MathJax.Hub.Config({
+      // Autonumbering by mathjax
+      TeX: { equationNumbers: { autoNumber: "AMS" } 
+    }});
   </script>
 {{ end }}
