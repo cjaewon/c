@@ -3,7 +3,7 @@ title: "RSS 사용법 메모"
 date: 2022-12-25T18:59:17+09:00
 thumbnail: /content/articles/thumbnail/rss.jpg
 tags: [메모]
-draft: false
+draft: true
 ---
 주기적으로 웹사이트를 방문하여 정보를 확인하는 것이 시간을 너무 많이 낭비하게 하는 것 같기도 하고, 피로감도 어느 정도 느껴지는 것 같아 RSS를 사용해보기로 했다.
 
